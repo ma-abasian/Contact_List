@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: var(--px-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+}
+
+
+:root {
+  --px-theme: #5c3f3f;
+  --px-theme-text: #ffdad9;
+  --px-bg: #211a1a;
+  --px-text: #d7c2c1;
+  --px-gray-1: #2f2525;
+  --px-gray-2: #362929;
+  --px-gray-3: #3c2e2e;
+  --px-gray-4: #3e2f2f;
+  --px-gray-5: rgba(61, 39, 39, 0.62);
+  --px-border: #534343;
+  --bs-heading-color: #ede0df;
+}
+
+.container {
+  font-family: 'Rubik', sans-serif;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.find {
+  background-color: var(--px-theme-text);
+  color: var(--px-theme);
+}
+
+
+.input {
+  background-color: var(--px-theme);
+  margin-right: 10px;
+  border-radius: 12px;
+  padding: 2px 8px;
+  border: 2px solid var(--px-theme);
+  width: 250px;
+  color: var(--px-theme-text);
+  min-width: 180px;
+  outline: none;
+
+  &:focus {
+    border: 2px solid var(--px-theme-text);
+  }
+
+  &::placeholder {
+    color: var(--px-theme-text);
+  }
+
+  &.search {
+    width: 510px;
+  }
+}
+
+
+.btn {
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  padding: 6px 0;
+  align-items: center;
+  background-color: var(--px-theme) !important;
+  color: var(--px-theme-text);
+  width: 250px;
+  border-radius: 12px;
+  transition: 0.35s;
+  border: 2px solid var(--px-theme);
+  font-weight: 600;
+}
+
+.btn:hover {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--px-theme);
+  background-color: var(--px-theme-text) !important;
+  border-radius: 10px;
+}
+
+.btn:disabled {
+  background-color: var(--px-theme-text) !important;
+  color: var(--px-theme);
+  border-color: var(--px-theme-text);
+  cursor: default;
+}
+
+.contact-list {
+  background-color: var(--px-theme);
+  width: 980px;
+  min-height: 520px;
+  border-radius: 12px;
+  margin-right: 10px;
+
+  &__items {
+    color: var(--px-theme-text);
+    padding: 8px;
+  }
+
+  &__item {
+    width: 860px;
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: var(--px-bg);
+
+    &-slice {
+      width: 33%;
+    }
+
+    &.title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      background-color: transparent;
+      //color: var(--px-bg);
+      border-radius: 0;
+      border-bottom: 2px solid var(--px-theme-text);
+      padding: 4px;
+
+
+    }
+  }
+}
+
